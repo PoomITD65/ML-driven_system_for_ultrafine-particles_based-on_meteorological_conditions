@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ระบบติดตามและพยากรณ์อนุภาคของฝุ่นละอองขนาดละเอียดพิเศษ</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="IMG/WEB_logo.png" />
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="header-logo">
+      <img src="IMG/WEB_logo.png" alt="Logo" class="logo" />
+    </div>
+    <div class="header-divider"></div>
+    <div class="header-text">
+      <h1>ระบบติดตามและพยากรณ์</h1>
+      <h1>อนุภาคของฝุ่นละอองขนาดละเอียดพิเศษ</h1>
+    </div>
+  </header>
+    
+    <!-- ✅ ข้อมูลปัจจุบัน
+    <div class="container">
+      <div class="card" id="card-now">
+        <div class="card-header">
+          <h4>ข้อมูลคุณภาพอากาศปัจจุบัน</h4>
+        </div>
+        <div class="card-container-now">
+          <div class="air-quality-card">
+            <div class="background-img" id="background-now">
+              <div class="status-container">
+                <div class="icon-container">
+                  <img id="status_icon_now" src="IMG//icon-face/Icon-good.png" alt="Good Air Quality">
+                </div>
+                <h2 id="status_text_now" class="status-text">เหมาะสม</h2>
+              </div>
+            </div>
+            <div class="content">
+              <p class="description">
+                <span id="description_sec">คุณภาพอากาศอยู่ในเกณฑ์ที่เหมาะสม</span><br>
+                ทุกคนสามารถทำกิจกรรมต่าง ๆ ได้ตามปกติ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-header-1">
+          <h4>คำแนะนำ</h4>
+        </div>
+  
+        <div class="card-body">
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/Temper_logo.png" alt="" class="icon" /><br>
+                  <span class="label">อุณหภูมิ</span>
+              </div>
+              <p id="temperature_now">Loading</p>
+              <div class="container-mix">
+                  <img id="status_temp_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+                  <span id="status_temp_text_sec" class="label">ดี</span>
+              </div>
+          </div>
+      
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/Humidity_logo.png" alt="" class="icon" /><br>
+                  <span class="label">ความชื้น</span>
+              </div>
+              <p id="humidity_now">Loading</p>
+              <div class="container-mix">
+                  <img id="status_humidity_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+                  <span id="status_humidity_text_sec" class="label">ดี</span>
+              </div>
+          </div>
+      
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/dust2.5-3_icon.png" alt="" class="icon" /><br>
+                  <span class="label">PM2.5</span>
+              </div>
+              <p id="pm25_now">Loading</p>
+              <div class="container-mix">
+                  <img id="status_pm25_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+                  <span id="status_pm25_text_sec" class="label">ดี</span>
+              </div>
+          </div>
+      
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/dust_icon.png" alt="" class="icon" /><br>
+                  <span class="label">PM0.1</span>
+              </div>
+              <p id="pm01_now">Loading</p>
+              <div class="container-mix">
+                  <img id="status_pm01_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+                  <span id="status_pm01_text_se " class="label">ดี</span>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+    </div> -->
+    <div class="content">
+    <!-- ✅ ข้อมูลปัจจุบัน -->
+    <div class="container">
+      <div class="card" id="card-sec">
+        <div class="card-header">
+          <h4>ข้อมูลคุณภาพอากาศปัจจุบัน</h4>
+        </div>
+        <div class="card-container-sec">
+          <div class="air-quality-card">
+            <div class="background-img" id="background-sec">
+              <div class="status-container">
+                <div class="icon-container">
+                  <img id="status_icon_sec" src="IMG//icon-face/Icon-good.png" alt="Good Air Quality">
+                </div>
+                <h2 id="status_text_sec" class="status-text">เหมาะสม</h2>
+              </div>
+            </div>
+            <div class="content">
+              <p class="description">
+                <span id="description_now">คุณภาพอากาศอยู่ในเกณฑ์ที่เหมาะสม</span><br>
+                ทุกคนสามารถทำกิจกรรมต่าง ๆ ได้ตามปกติ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-header-1">
+          <h4>คำแนะนำ</h4>
+        </div>
+        
+        <div class="card-body">
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/Temper_logo.png" alt="" class="icon" /><br>
+                  <span class="label">อุณหภูมิ</span>
+              </div>
+              <p id="temperature_sec">Loading</p>
+              <div class="container-mix">
+                  <img id="status_temp_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+              </div>
+          </div>
+      
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/Humidity_logo.png" alt="" class="icon" /><br>
+                  <span class="label">ความชื้น</span>
+              </div>
+              <p id="humidity_sec">Loading</p>
+              <div class="container-mix">
+                  <img id="status_humidity_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+              </div>
+          </div>
+      
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/dust2.5-3_icon.png" alt="" class="icon" /><br>
+                  <span class="label">PM2.5</span>
+              </div>
+              <p id="pm25_sec">Loading</p>
+              <div class="container-mix">
+                  <img id="status_pm25_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+                  <span id="status_pm25_text_sec" class="label">ดี</span>
+              </div>
+          </div>
+      
+          <div class="card-item">
+              <div class="container-mix">
+                  <img src="IMG/dust_icon.png" alt="" class="icon" /><br>
+                  <span class="label">PM0.1</span>
+              </div>
+              <p id="pm01_sec">Loading</p>
+              <div class="container-mix">
+                  <img id="status_pm01_sec" src="IMG/Status/normal.png" alt="" class="icon" /><br>
+                  <span id="status_pm01_text_sec" class="label">ดี</span>
+              </div>
+          </div>
+      </div>   
+      </div>
+    </div>
+
+    <!-- ✅ ข้อมูล 1 ชั่วโมงล่าสุด -->
+    <div class="container">
+      <div class="card" id="card-1h">
+        <div class="card-header">
+          <h4>เฉลี่ย 1 ชั่วโมง</h4>
+        </div>
+        <div class="card-container-1h">
+          <div class="air-quality-card">
+            <div class="background-img" id="background-1h">
+              <div class="status-container">
+                <div class="icon-container">
+                  <img src="IMG//icon-face/Icon-good.png" alt="Good Air Quality">
+                </div>
+                <h2 class="status-text">เหมาะสม</h2>
+              </div>
+            </div>
+            <div class="content">
+              <p class="description">
+                คุณภาพอากาศอยู่ในเกณฑ์ที่เหมาะสม<br>
+                ทุกคนสามารถทำกิจกรรมต่าง ๆ ได้ตามปกติ
+              </p>
+            </div>
+          </div>
+        </div>
+
+          
+        <div class="card-header-1">
+          <h4>คำแนะนำ</h4>
+        </div>
+        <div class="card-body">
+          <div class="card-item">
+            <div class="container-mix">
+              <img src="IMG/Temper_logo.png" alt="" class="icon" /><br>
+              <span class="label">อุณหภูมิ</span>
+            </div>
+            <p id="temperature_1h">Loading</p>
+            <div class="container-mix">
+              <img src="IMG/Status/normal.png" alt="" class="icon" /><br>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="container-mix">
+              <img src="IMG/Humidity_logo.png" alt="" class="icon" /><br>
+              <span class="label">ความชื้น</span>
+            </div>
+            <p id="humidity_1h">Loading</p>
+            <div class="container-mix">
+              <img src="IMG/Status/normal.png" alt="" class="icon" /><br>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="container-mix">
+                <img src="IMG/dust2.5-3_icon.png" alt="" class="icon" /><br>
+                <span class="label">PM2.5</span>
+            </div>
+            <p id="pm25_1h">Loading</p>
+            <div class="container-mix">
+                <img id="status_pm25_icon_1h" src="IMG/Status/normal.png" alt="" class="icon" /><br> 
+                <span id="status_pm25_text_1h" class="label">ดี</span>
+            </div>
+        </div>
+        
+
+          <div class="card-item">
+            <div class="container-mix">
+              <img src="IMG/dust_icon.png" alt="" class="icon" /><br>
+              <span class="label">PM0.1</span>
+            </div>
+            <p id="pm01_1h">Loading</p>
+            <div class="container-mix">
+              <img id="status_pm01_icon_1h"src="IMG/Status/normal.png" alt="" class="icon" /><br>
+              <span id="status_pm01_text_1h" class="label">ดี</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ ข้อมูล 24 ชั่วโมงล่าสุด -->
+    <div class="container">
+      <div class="card" id="card-24h">
+        <div class="card-header">
+          <h4>เฉลี่ย 1 วัน</h4>
+        </div>
+        <div class="card-container-24h">
+          <div class="air-quality-card">
+            <div class="background-img" id="background-24h">
+              <div class="status-container">
+                <div class="icon-container">
+                  <img src="IMG//icon-face/Icon-good.png" alt="Good Air Quality">
+                </div>
+                <h2 class="status-text">เหมาะสม</h2>
+              </div>
+            </div>
+            <div class="content">
+              <p class="description">
+                คุณภาพอากาศอยู่ในเกณฑ์ที่เหมาะสม<br>
+                ทุกคนสามารถทำกิจกรรมต่าง ๆ ได้ตามปกติ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-header-1">
+          <h4>คำแนะนำ</h4>
+        </div>
+        <div class="card-body">
+          <div class="card-item">
+            <div class="container-mix">
+              <img src="IMG/Temper_logo.png" alt="" class="icon" /><br>
+              <span class="label">อุณหภูมิ</span>
+            </div>
+            <p id="temperature_24h">Loading</p>
+            <div class="container-mix">
+              <img src="IMG/Status/normal.png" alt="" class="icon" /><br>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="container-mix">
+              <img src="IMG/Humidity_logo.png" alt="" class="icon" /><br>
+              <span class="label">ความชื้น</span>
+            </div>
+            <p id="humidity_24h">Loading</p>
+            <div class="container-mix">
+              <img src="IMG/Status/normal.png" alt="" class="icon" /><br>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="container-mix">
+              <img src="IMG/dust2.5-3_icon.png" alt="" class="icon" /><br>
+              <span class="label">PM2.5</span>
+              </div>
+            <p id="pm25_24h">Loading</p>
+            <div class="container-mix">
+              <img id="status_pm25_icon_24h" src="IMG/Status/normal.png" alt="" class="icon" /><br> 
+              <span id="status_pm25_text_24h" class="label">ดี</span>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="container-mix">
+              <img src="IMG/dust_icon.png" alt="" class="icon" /><br>
+              <span class="label">PM0.1</span>
+            </div>
+            <p id="pm01_24h">Loading</p>
+            <div class="container-mix">
+              <img id="status_pm01_icon_24h"src="IMG/Status/normal.png" alt="" class="icon" /><br>
+              <span id="status_pm01_text_24h" class="label">ดี</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-container">
+    <div class="footer-logo">
+      <img src="IMG/ITD.png" alt="ITD Logo" class="img1" />
+      <img src="IMG/Logo_WU.png" alt="University Logo" class="img2" />
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-text">
+      <p><b>สาขาวิชาเทคโนโลยีสารสนเทศ</b></p>
+      <p><b>สำนักงานวิชาการและเทคโนโลยี มหาวิทยาลัยวลัยลักษณ์</b></p>
+      <p>222 ตำบลไทยบุรี อำเภอท่าศาลา จังหวัดนครศรีธรรมราช 80160</p>
+      <p>© Copyright. All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
